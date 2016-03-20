@@ -12,3 +12,4 @@ __pycache__/
 
 *.log
 *.sql
+*.sqlite3
