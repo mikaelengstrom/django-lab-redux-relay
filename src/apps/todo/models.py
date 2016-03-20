@@ -21,6 +21,7 @@ class Ticket(TimestampedModel, models.Model):
     description = models.TextField(blank=True, null=True)
     done = models.BooleanField(default=False)
     project = models.ForeignKey(Project, related_name='tickets')
+    milestone = models.ForeignKey(Milestone, related_name='tickets', null=True)
 
 
 
